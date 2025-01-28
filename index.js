@@ -7,14 +7,14 @@ app.use(express.json());
 
 // Define the route for the API
 app.get('/api/info', (req, res) => {
-    const email = 'alabianiyikaye6@gmail.com'; // Replace with your registered email
+    const email = 'alabianiyikaye6@gmail.com';
     const currentDateTime = new Date().toISOString();
-    const githubUrl = 'https://github.com'; // Replace with your GitHub URL
+    const githubUrl = 'https://github.com/Aniyikaye-Alabi/HNG-12-Stage-Zero';
 
     const response = {
         email: email,
-        currentDateTime: currentDateTime,
-        githubUrl: githubUrl
+        current_datetime: currentDateTime,
+        github_url: githubUrl
     };
 
     res.json(response);
